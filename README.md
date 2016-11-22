@@ -4,8 +4,8 @@ This is a Dockerfile that extends the base WildFly application server image. It 
 
 ## Versions
 
-Wildfly 10.1.0.Final
-Swagger UI 2.2.6
+- Wildfly 10.1.0.Final
+- Swagger UI 2.2.6
 
 ## Usage
 
