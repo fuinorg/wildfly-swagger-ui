@@ -2,6 +2,8 @@
 
 This is a Dockerfile that extends the base WildFly application server image. It replaces the default Wildfly welcome page with the [Swagger UI](http://swagger.io/swagger-ui/) and allows replacing the default http://petstore.swagger.io/v2/swagger.json with your own URL. This makes it easier to deliver a Swagger UI along with your REST microservice based on Wildfly. The user just enters the domain (like "http://localhost:8080") and the Swagger UI with your URL will show up.
 
+[![Automated Docker Build](https://img.shields.io/docker/automated/fuinorg/wildfly-swagger-ui.svg)](https://hub.docker.com/r/fuinorg/wildfly-swagger-ui/)
+
 ## Versions
 
 - Wildfly 10.1.0.Final
