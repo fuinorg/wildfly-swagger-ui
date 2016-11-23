@@ -22,3 +22,11 @@ When you create your own microservice's docker image, you can also override the 
     FROM fuinorg/wildfly-swagger-ui
     ENV SWAGGER_API_URL http://any-domain-you-want.xyz/api
 
+Of course you can start Wildfly also with other parameters:
+
+    FROM fuinorg/wildfly-swagger-ui
+    RUN /opt/jboss/wildfly/bin/add-user.sh admin Admin#70365 --silent
+    CMD ["/opt/jboss/wildfly/bin/prepare-env.sh", "/opt/jboss/wildfly/bin/standalone.sh", "-b", "0.0.0.0", "-bmanagement", "0.0.0.0"]
+
+**Note the CMD "prepare-env.sh" parameter:** This has to be always the first CMD parameter before any other Wildfly standard arguments.  
+
