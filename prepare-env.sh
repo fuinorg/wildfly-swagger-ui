@@ -5,7 +5,7 @@ SWAGGER_TARGET_DIR=$JBOSS_HOME/welcome-content
 
 # Copy the Swagger UI files into Wildfly's welcome directory
 rm -R $SWAGGER_TARGET_DIR/*
-cp -n -R $SWAGGER_TMP_DIR/dist/* $SWAGGER_TARGET_DIR
+cp -n -R $SWAGGER_TMP_DIR/* $SWAGGER_TARGET_DIR
 
 # Replace the default Swagger URL with the content of 
 # the environment variable SWAGGER_API_URL
