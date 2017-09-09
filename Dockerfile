@@ -1,7 +1,7 @@
 FROM jboss/wildfly:10.1.0.Final
 MAINTAINER Michael Schnell
 
-ENV SWAGGER_VERSION 2.2.6
+ENV SWAGGER_VERSION 3.1.7
 ENV SWAGGER_FILE swagger-ui-$SWAGGER_VERSION
 ENV SWAGGER_TMP_DIR /var/tmp/$SWAGGER_FILE
 ENV SWAGGER_API_URL http://petstore.swagger.io/v2/swagger.json

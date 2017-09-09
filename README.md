@@ -7,7 +7,7 @@ This is a Dockerfile that extends the base WildFly application server image. It 
 ## Versions
 
 - Wildfly 10.1.0.Final
-- Swagger UI 2.2.6
+- Swagger UI 3.1.7
 
 ## Usage
 
